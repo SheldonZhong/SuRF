@@ -18,3 +18,7 @@ RUN cd SuRF && \
     cmake .. && \
     make -j
 
+RUN cd /root/SuRF/bench/workload_gen && \
+    bash ycsb_download.sh && \
+    bash gen_workload.sh
+
